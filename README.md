@@ -7,10 +7,13 @@
 5. Run it:
 
   ```sh
-  cd bayes-mvp
+  cd typescript-todo
   yarn
-  npm build
-  npm start
+  yarn build
+  yarn start
   ```
 
 6. Open *https://localhost:9000* in your browser
+
+## See the app in action
+![Todo](./todo.gif)
