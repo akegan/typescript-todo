@@ -4,6 +4,7 @@ import { ListItem } from 'material-ui/List'
 import Close from 'material-ui/svg-icons/navigation/close'
 import * as React from 'react'
 import { Todo } from '../datatypes'
+import './TodoItem.css'
 
 type Props = {
   todo: Todo
@@ -20,7 +21,7 @@ export class TodoItem extends React.Component<Props> {
   render() {
     return <div>
       <ListItem
-        className='ListItem -Compact'
+        className='TodoItem ListItem -Compact'
         primaryText={this.props.todo.task}
         style={{ textDecoration: this.props.todo.completed ? 'line-through' : null }}
         leftCheckbox={

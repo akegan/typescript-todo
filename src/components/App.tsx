@@ -7,6 +7,7 @@ import { replace } from '../utils'
 import { AddTodoItem } from './AddTodoItem'
 import { Header } from './Header'
 import { TodoList } from './TodoList'
+import './App.css'
 
 export let App = withStore()(class extends React.Component<StoreProps> {
   render() {

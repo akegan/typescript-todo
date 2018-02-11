@@ -3,7 +3,6 @@ import FlatButton from 'material-ui/FlatButton'
 import TextField from 'material-ui/TextField'
 import * as React from 'react'
 import { StoreProps, withStore } from '../store'
-
 let ENTER = 13
 
 export let AddTodoItem = withStore('inProgressTask')(class extends React.Component<StoreProps> {
@@ -12,7 +11,7 @@ export let AddTodoItem = withStore('inProgressTask')(class extends React.Compone
     this.props.store.set('inProgressTask')(event.target.value)
   }
   render() {
-    return <div>
+    return <div className='Center'>
       < TextField
         hintText='Whatever shall we do today?'
         onChange={this.handleChange}
